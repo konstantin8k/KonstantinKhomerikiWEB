@@ -5,7 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../../master.css">
     <title>Portfolio</title>
+    <link rel="shortcut icon" type="image/png" href="/img/Favicon.png">
 </head>
 <body>
 
@@ -25,33 +27,39 @@
     </header>
 
 
-
-
-
-<div class="galery_box">
-    <br>
-    <br>
-    <br>
-    <div class="desc"><b>One of my UI/UX work</b></div>
-    <div class="gallery">
-            <img src="../../img/web1.png" alt="Cinque Terre" width="600" height="400">
-                
-    </div>
-    <div class="desc"><b>collage</b></div>
-
-    <div class="gallery">
-            <img src="../../img/web2.png" alt="Forest" width="600" height="400">
-                <!-- <div class="desc">Rastor Graphic colage</div> -->
+<div class="container">
+    <div class="image_container">
+        <img class="image" src="../../img/web1.png" alt="Cinque Terre" width="600" height="400">
+        <img class="image" src="../../img/web2.png" alt="Forest" width="600" height="400">
+        <img class="image" src="../../img/web3.png" alt="Northern Lights" width="600" height="400">
+        <img class="image" src="../../img/web4.png" alt="Mountains" width="600" height="400">
     </div>
 
-    <div class="gallery">
-            <img src="../../img/web3.png" alt="Northern Lights" width="600" height="400">
+
+    <div class="popup-image">
+        <span>&times;</span>
+        <img src="/img/web1.png" alt="pic">
     </div>
 
-    <div class="gallery">
-            <img src="../../img/web4.png" alt="Mountains" width="600" height="400">
-    </div>
 </div>
+
+
+<script>
+    document.querySelectorAll('.image_container').forEach(Image =>{
+        Image.onclick = () => {
+            document.querySelector('.popup-image').style.display = 'block';
+            document.querySelector('.popup-image img').src = getAttribute('src');
+        }
+    });
+
+document.querySelector('.popup-image span').onclick = () =>{
+    document.querySelector('.popup-image').style.display = 'none';
+}
+</script>
+
+
+
+
 
     </body>
     

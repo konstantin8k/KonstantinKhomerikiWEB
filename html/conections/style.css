@@ -8,7 +8,7 @@
 }
 
 li, a, button {
-    font-weight: 500;
+    font-weight: bold;
     font-size: 16;
     text-decoration: none;
 }
@@ -85,7 +85,12 @@ button:hover {
     border-radius: 10px;
  }
 
+
+.icn_img{
+    transition: all 0.3s ease 0s;
+}
+
  .icn_img:hover{
-    background-color: blueviolet;
+    background-color: rgb(82, 54, 240);
     cursor: pointer;
  }
