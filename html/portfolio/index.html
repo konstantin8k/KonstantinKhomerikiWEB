@@ -7,18 +7,18 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="../../master.css">
     <title>Portfolio</title>
-    <link rel="shortcut icon" type="image/png" href="/img/Favicon.png">
+    <link rel="shortcut icon" type="image/png" href="../../img/Favicon.png">
 </head>
 <body>
 
     <header>
-        <img class="logo" src="/img/logo.png" width="" height="35" alt="logo">
+        <img class="logo" src="../../img/logo.png" width="" height="35" alt="logo">
 
         <nav>
             <ul class="nav_lnk">
                 <li><a href="../../index.html">About me</a></li>
-                <li><a href="/html/portfolio/index.html">Portfolio</a></li>
-                <li><a href="/html/conections/index.html">Connections</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="../conections/index.html">Connections</a></li>
 
             </ul>
         </nav>
@@ -29,26 +29,27 @@
 
 <div class="container">
     <div class="image_container">
-        <img class="image" src="../../img/web1.png" alt="Cinque Terre" width="600" height="400">
-        <img class="image" src="../../img/web2.png" alt="Forest" width="600" height="400">
-        <img class="image" src="../../img/web3.png" alt="Northern Lights" width="600" height="400">
-        <img class="image" src="../../img/web4.png" alt="Mountains" width="600" height="400">
+        <div class="image"> <img src="../../img/web1.png" alt="" width="600" height="400"></div>
+        <div class="image"> <img src="../../img/web2.png" alt="" width="600" height="400"></div>
+        <div class="image"> <img src="../../img/web3.png" alt="" width="600" height="400"></div>
+        <div class="image"> <img src="../../img/web4.png" alt="" width="600" height="400"></div>
+
     </div>
 
 
     <div class="popup-image">
         <span>&times;</span>
-        <img src="/img/web1.png" alt="pic">
+        <img src="../../img/web1.png" alt="">
     </div>
 
 </div>
 
 
 <script>
-    document.querySelectorAll('.image_container').forEach(Image =>{
-        Image.onclick = () => {
+    document.querySelectorAll('.image_container img').forEach(Image =>{
+            Image.onclick = () => {
             document.querySelector('.popup-image').style.display = 'block';
-            document.querySelector('.popup-image img').src = getAttribute('src');
+            document.querySelector('.popup-image img').src = Image.getAttribute('src');
         }
     });
 

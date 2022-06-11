@@ -78,10 +78,17 @@ button:hover {
 .container .image_container .image{
     height: 250px;
     width: 350px;
+    border-radius: 10px;
+    border: rgb(82, 54, 240)solid 6px;
     object-fit: cover;
-    border: 10px solid white;
     overflow: hidden;
     cursor: pointer;
+    opacity: 80%;
+}
+
+.container .image_container .image:hover{
+    opacity: 100%;
+    transition: all 0.3s ease 0s;
 }
 
 .container .image_container .image img{
@@ -89,10 +96,13 @@ button:hover {
     width: 100%;
     object-fit: cover;
     transition: .2s linear;
+    transition: all 0.3s ease 0s;
 }
 
+
 .container .image_container .image:hover img{
-    transform: scale(1.1);
+    transform: scale(1.03);
+    transition: all 0.3s ease 0s;
 
 }
 
@@ -108,13 +118,21 @@ button:hover {
 }
 
 .container .popup-image span{
-    position: absolute;
-    top: 0; left: 10;
+    display: flex;
+    justify-content: flex-end;
+    margin: 10px;
+    padding: 10px;
+    top: 0; left: 0;
     font-size: 60px;
     font-weight: bolder;
     color: white;
     cursor: pointer;
     z-index: 100;
+}
+
+
+.container .popup-image span:hover{
+    color: grey;
 }
 
 .container .popup-image img{
@@ -129,7 +147,7 @@ button:hover {
 }
 
 @media (max-width:768px){
-    .container .popup-image img{
+    .container .popup-image{
         width: 95%;
     }
 }
