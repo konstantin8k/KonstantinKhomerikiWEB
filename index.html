@@ -7,8 +7,20 @@
     <link rel="stylesheet" href="master.css">
     <link rel="stylesheet" href="style.css">
     <script src="myscripts.js"></script>
+    
     <title>About me</title>
     <link rel="shortcut icon" type="image/png" href="./img/Favicon.png">
+
+     <!-- Global Site Tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=TRACKING_ID"></script>
+
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'TRACKING_ID');
+    </script>
+    
 </head>
 <body>
 
@@ -25,8 +37,7 @@
 
             </ul>
         </nav>
-
-        <a class="cta" href="mailto:konstantin.khomeriki.1@btu.edu.ge"><button>Send Email</button></a>
+        <button class="GFG"  onclick="window.location.href = 'mailto:konstantin.khomeriki.1@btu.edu.ge';">Send Email</button>  
     </header>
     
 
@@ -46,21 +57,105 @@
                     but I plan to develop my skills further in Web development.
                 </p>
 
-                <a href="#hobbies"><button type="button">More</button></a>
+                <button class="GFG"  onclick="window.location.href = '#hobbies';"> More</button>
 
             </div>
         </div>
     </section>
 
+    <!-- <p id="more-abt-me2">Lorem ipsum dolor sit amet, consectetur 
+        adipiscing elit. Nullam pharetra quis sem sed mattis. 
+        Etiam aliquet lectus ut euismod condimentum. 
+        Nullam eros ipsum, imperdiet a ipsum id, 
+        iaculis lobortis lectus. Suspendisse posuere 
+        risus enim, et luctus elit rhoncus eget. 
+        Morbi molestie venenatis leo ac pulvinar. 
+        Curabitur non ex ac ipsum lacinia dignissim. 
+        Phasellus et urna porta nibh porta molestie eu vel est.
+    </p> -->
+
     <section class="hobbies" id="hobbies" >
 
-        <div class="hobbies" >
-            <h2>hmmm... maybe later...</h2>
+        <h2 class="hobbies" id="more-abt-me">More about me.</h2>
+        <p class="hobbies" id="more-abt-me-par"><b>Lorem ipsum dolor sit amet, consectetur 
+            adipiscing elit. Nullam pharetra quis sem sed mattis. <br>
+            Etiam aliquet lectus ut euismod condimentum. 
+            Nullam eros ipsum, imperdiet a ipsum id, 
+            iaculis lobortis lectus. <br>Suspendisse posuere 
+            risus enim, et luctus elit rhoncus eget.
+            Morbi molestie venenatis leo ac pulvinar. <br>
+            Curabitur non ex ac ipsum lacinia dignissim. 
+            Phasellus et urna porta nibh porta molestie eu vel est.</b></p>
+
+        <div class="table-style">
+            <table class="table-prop">
+                <tr>
+                  <th>Programing languages</th>
+                  <th>Level</th>
+                  <th>Projects</th>
+                </tr>
+                <tr>
+                  <td>Python</td>
+                  <td>★★★☆☆</td>
+                  <td><a href="/html/portfolio/index.html" target="_blank">Py Projects</a></td>
+                </tr>
+                <tr>
+                  <td>Javascript</td>
+                  <td>★★☆☆☆</td>
+                  <td><a href="/html/portfolio/index.html" target="_blank">Js Projects</a></td>
+                </tr>
+                <tr>
+                  <td><br><b>Aditional</b></td>
+                  <td>-</td>
+                  <td>-</td>
+                </tr>
+                <tr>
+                  <td>Html</td>
+                  <td>★★★★☆</td>
+                  <td><a href="/html/portfolio/index.html" target="_blank">Html only Projects</a></td>
+                </tr>
+                <tr>
+                    <td>Css</td>
+                    <td>★★★★☆</td>
+                    <td><a href="/html/portfolio/index.html" target="_blank">Html/Css Projects</a></td>
+                </tr>
+              </table>
+              <br>
+              <br>
+              <br>
+              <br>
+
+              <table>
+                <tr>
+                  <th>Education</th>
+                  <th>Year</th>
+                  <th>Details</th>
+                </tr>
+                <tr>
+                  <td>BTU IT Faculty</td>
+                  <td>2020-2024</td>
+                  <td><a href="https://btu.edu.ge/wp-content/uploads/2021/04/c4d129d99593a3060af270f53cb01c90.pdf" target="_blank">More</a></td>
+                </tr>
+                <!-- <tr>
+                  <td>Lois</td>
+                  <td>Griffin</td>
+                  <td>$150</td>
+                </tr> -->
+              </table>
+
         </div>
+        
+
+
         
     </section>
 
-
-
 </body>
+<footer>
+  <section class="foot">
+    <p>Copyright &copy; konstantin8k 2022</p>
+    <p><a href="tel:+995577******"><img src="/img/phone.png" alt="telephone"  title="Call me!" width="12px" height="auto"> 577******</a></p>
+    <p><a href="mailto:someone@example.com"><img src="/img/email.png" alt="telephone" title="Call me!" width="12px" height="auto"> khomerikikote14@gmail.com</a></p>
+  </section>
+</footer>
 </html>

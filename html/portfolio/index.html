@@ -8,8 +8,22 @@
     <link rel="stylesheet" href="../../master.css">
     <title>Portfolio</title>
     <link rel="shortcut icon" type="image/png" href="../../img/Favicon.png">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QT1800YMMV"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-QT1800YMMV');
+    
+    </script>
 </head>
 <body>
+    <div class="loader">
+        <div></div>
+    </div>
 
     <header>
         <a href="../../index.html" class="logo"><img src="../../img/logo.png" width="" height="35" alt="logo"></a>
@@ -23,12 +37,15 @@
             </ul>
         </nav>
 
-        <a class="cta" href="mailto:konstantin.khomeriki.1@btu.edu.ge"><button>Send Email</button></a>
+        <button class="GFG"  onclick="window.location.href = 'mailto:konstantin.khomeriki.1@btu.edu.ge';">Send Email</button>  
     </header>
 
 
+    
 <div class="container">
+    <p id="title">Random works</p>
     <div class="image_container">
+
         <div class="image"> <img src="../../img/web1.png" alt="" width="600" height="400"></div>
         <div class="image"> <img src="../../img/web2.png" alt="" width="600" height="400"></div>
         <div class="image"> <img src="../../img/web3.png" alt="" width="600" height="400"></div>
@@ -36,33 +53,101 @@
 
     </div>
 
+    <p id="title">Memes</p>
+    <div class="image_container">
+
+        <div class="image"> <img src="../../img/web5.png" alt="" width="600" height="400"></div>
+        <div class="image"> <img src="../../img/web6.png" alt="" width="600" height="400"></div>
+        <div class="image"> <img src="../../img/web7.gif" alt="" width="600" height="400"></div>
+        <div class="image"> <img src="../../img/web8.png" alt="" width="600" height="400"></div>
+
+    </div>
+
+
 
     <div class="popup-image">
-        <span>&times;</span>
-        <img src="../../img/web1.png" alt="">
+        <div class="move">
+            <button id="myBtn2">&times;</button>
+        </div>
+
+        <div class="w3-content w3-display-container">
+            <img class="mySlides" src="../../img/web1.png" width="100px">
+            <img class="mySlides" src="../../img/web2.png" width="100px">
+            <img class="mySlides" src="../../img/web3.png" width="100px">
+            <img class="mySlides" src="../../img/web4.png" width="100px">
+            <img class="mySlides" src="../../img/web5.png" width="100px">
+            <img class="mySlides" src="../../img/web6.png" width="100px">
+            <img class="mySlides" src="../../img/web7.gif" width="100px">
+            <img class="mySlides" src="../../img/web8.png" width="100px">
+
+            <div class="but-pos">
+                <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+                <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+            </div>
+
+        </div>
+
     </div>
 
 </div>
 
 
-<script>
-    document.querySelectorAll('.image_container img').forEach(Image =>{
-            Image.onclick = () => {
-            document.querySelector('.popup-image').style.display = 'block';
-            document.querySelector('.popup-image img').src = Image.getAttribute('src');
-        }
-    });
 
-document.querySelector('.popup-image span').onclick = () =>{
+
+<script>
+
+
+document.querySelectorAll('.image_container img').forEach(Image =>{
+        Image.onclick = () => {
+         document.querySelector('.popup-image').style.display = 'block';
+         document.querySelector('.popup-image img').src = Image.getAttribute('src');
+     }
+});
+
+
+
+document.querySelector('.popup-image button').onclick = () =>{
     document.querySelector('.popup-image').style.display = 'none';
 }
+
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+
+// window.addEventListener('keyup', function(event) {
+//   if (event.keyCode === 27) {
+//     alert('enter was pressed!');
+//     $("#exit").click();
+//   }
+// });
+
+
 </script>
 
 
-
-
-
-    </body>
     
 </body>
+
+<footer>
+    <section class="foot">
+      <p>Copyright &copy; konstantin8k 2022</p>
+      <p><a href="tel:+995577******"><img src="../../img/phone.png" alt="telephone"  title="Call me!" width="12px" height="auto"> 577******</a></p>
+      <p><a href="mailto:someone@example.com"><img src="../../img/email.png" alt="telephone" title="Call me!" width="12px" height="auto"> khomerikikote14@gmail.com</a></p>
+    </section>
+</footer>
+
 </html>

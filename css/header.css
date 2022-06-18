@@ -29,6 +29,7 @@ header {
     top: 0; 
     width: 100%;
     background-color: rgba(0, 0, 0, 0.8);
+    z-index: 10;
 }
 
 header *{
@@ -37,6 +38,7 @@ header *{
 
 body{
     margin-top: 90px;
+    position: relative;
 }
 
 img,a,button {
@@ -72,15 +74,75 @@ img,a,button {
 
 button {
     margin-left: 20px;
+    margin-right: 20px;
     padding: 9px 25px;
     background-color: rgb(82, 54, 240);
     border: none;
     border-radius: 50px;
     cursor: pointer;
+    z-index: 100;
     transition: all 0.3s ease 0s;
 
 }
 
 button:hover {
     background-color: rgb(20, 11, 66);
+}
+
+
+
+
+
+
+footer {
+    z-index: 100;
+    position: absolute;
+    width: 100%;
+}
+
+footer *{
+    /* text-align: center; */
+    /* padding: 36px; */
+    background-color: #333333;
+    color: rgb(114, 114, 114);
+    transition: all 0.3s ease 0s;
+}
+
+
+
+
+footer a{
+    font-size: small;
+    font-weight: normal;
+}
+
+footer a:hover{
+    color: white;
+    cursor: pointer;
+}
+
+
+footer p{
+    margin: 20px;
+}
+
+footer img{
+    background-color: rgb(114, 114, 114);
+    border-radius: 2px;
+    padding: 2px;
+}
+
+footer p:hover{
+    color: white;
+}
+
+
+
+.foot{
+    display: flex;
+    justify-content: center;
+    background-color: #333333;
+    font-size: small;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }

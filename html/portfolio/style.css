@@ -1,10 +1,10 @@
 @import url(../../css/header.css);
 
 .container {
-    margin-top: 200px;
+    /* margin-top: 200px; */
     position: relative;
-    min-height: 100vh;
-    padding-top: 90px;
+    min-height: 70vh;
+    padding-top: 10px;
 
 }
 
@@ -59,7 +59,7 @@
     display: none;
 }
 
-.container .popup-image span{
+/* .container .popup-image span{
     display: flex;
     justify-content: flex-end;
     margin: 10px;
@@ -70,7 +70,7 @@
     color: white;
     cursor: pointer;
     z-index: 100;
-}
+} */
 
 
 .container .popup-image span:hover{
@@ -83,8 +83,11 @@
     transform: translate(-50%,-50%);
     border: 5px solid white;
     border-radius: 5px;
+    margin-top: 30px;
     width: 750px;
     object-fit: cover;
+    transition: all 0.3s ease 0s;
+
 
 }
 
@@ -92,4 +95,65 @@
     .container .popup-image{
         width: 95%;
     }
+}
+
+
+
+
+
+
+
+
+
+/* SLIDER */
+
+
+.w3-center{
+    background-color: transparent !important;
+  width: 100%;
+}
+
+.but-pos {
+  display:flex;
+  justify-content: space-around;
+  margin-top: 300px;
+  background-color: transparent !important;
+  transition: all 0.3s ease 0s;
+
+}
+
+.w3-display-container {
+    background-color: transparent !important;
+}
+
+
+
+
+.mySlides {display:none;}
+
+
+footer {
+    z-index: 1;
+}
+
+#title {
+    text-align: center;
+    font-size: 40px;
+    margin: 30px;
+    font-weight: bold;
+}
+
+#myBtn2 {
+    top: 0; left: 0;
+    font-size: 30px;
+    font-weight: bolder;
+    color: white;
+    cursor: pointer;
+    z-index: 100;
+}
+
+.move {
+    display: flex;
+    justify-content: flex-end;
+    background-color: transparent;
 }
