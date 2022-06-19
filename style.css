@@ -97,20 +97,25 @@ span {
     width: auto;
 }
 
-/* table {
+
+
+.text-center {
+    display: flex;
+    justify-content: center;
     width: 100%;
-  } */
-  
-/* th {
-    height: 60px;
 }
 
-th, td {
-    border-bottom: 1px solid #ddd;
-  }
 
+#more-abt-me {
+    font-size:100px;
+    transition: all 0.3s ease 0s;
+}
 
-tr:hover {background-color: coral;} */
+#more-abt-me-par {
+    padding: 5px;
+    width: 50%;
+}
+
 
 table {
     border-collapse: collapse;
@@ -139,14 +144,6 @@ table a:hover {
     color: rgb(255, 0, 64) !important; 
 }
 
-#more-abt-me {
-    font-size:100px;
-    transition: all 0.3s ease 0s;
-}
-
-#more-abt-me-par {
-    padding: 5px;
-}
 
 
 

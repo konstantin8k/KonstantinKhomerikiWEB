@@ -101,8 +101,6 @@ footer {
 }
 
 footer *{
-    /* text-align: center; */
-    /* padding: 36px; */
     background-color: #333333;
     color: rgb(114, 114, 114);
     transition: all 0.3s ease 0s;
